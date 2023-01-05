@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(34, 34, 34);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.teclado {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.tecla {
+    padding: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.tecla:hover {
+    background-color: rgb(69, 69, 69);
+}
+
+.active {
+    border-color: yellow;
+    color: yellow;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.botao {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgb(69, 69, 69);
+}
+
+footer {
+    color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ccc;
+}
+
